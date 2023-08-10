@@ -1,7 +1,6 @@
 ====
 nginx/
-ansible/playbooks/redis.yml 
-ansible/playbooks/script.yml 
-ansible/playbooks/zabbix.yml
-ansible/common/files/
+ansible/playbooks/add_user.yml
+ansible/playbooks/script.yml
+ansible/common/files/testweb.sh
 ====
