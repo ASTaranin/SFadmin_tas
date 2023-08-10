@@ -1,0 +1,16 @@
+ - hosts: all
+   become: yes
+
+   tasks:
+
+   -  name: copy zabbix config
+      copy:
+        src: /etc/ansible/zabbix/zabbix_agentd.conf
+        dest: /home/ansible-admin/zabbix-agentd.conf
+        mode: 0644
+   -  name: replase2
+      lineinfile:
+        dest: /home/ansible-admin/zabbix-agentd.conf
+        regexp: '^Hostname='
+        line: 'Hostname={{ ansible_hostname }} '
+        backrefs: yes

@@ -1,0 +1,5 @@
+====
+nginx/
+ansible/playbooks/script.yml
+ansible/common/files/testweb.sh
+====
